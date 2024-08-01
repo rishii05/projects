@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewellery Store</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body style="height: 1500px;">
+    <header>
+        <nav>
+            <img src="./images/BAY.png" style="height: 110px; width: 150px; background-color: black; position: relative; left: -150px;">
+            <!-- <div class="logo">JEWELLERY BAY</div> -->
+            <ul class="nav-links" style="position: relative;left: -300px;bottom: -25px;">
+                <li><a href="./index.html" style="font-size: 20px;margin-right: 60px;">Home</a></li>
+                <li><a href="./products.html"style="font-size: 20px;margin-right: 60px;">Products</a></li>
+                <li><a href="./about.html"style="font-size: 20px;margin-right: 60px;">About</a></li>
+                <li><a href="./contact.html"style="font-size: 20px;margin-right: 60px;">Contact</a></li>
+                <p><a href="./products.html" ><img src="./images/find.png" width="30px" height="30px" style="position: relative;right: -600px;top: -30px;"></a></p>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        .map-container {
+          position: relative;
+          padding-bottom: 56.25%; /* 16:9 aspect ratio */
+          height: 0;
+          overflow: hidden;
+          max-width: 100%;
+          height: auto;
+        }
+    
+        .map-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: 0;
+        }
+      </style>
+      <div class="map-container">
+        <!-- Replace the src URL with the one you got from Google Maps -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509283!2d144.9537353153154!3d-37.816279679751554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d8671d123d4b!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1618227785741!5m2!1sen!2sau" allowfullscreen="" loading="lazy" style="height: 400px;"></iframe>
+      </div>
+      <div class="contact-container" style="position: relative;top: -400px;right: 200px;">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Whether you have a question about our products, need assistance with an order, or just want to give us feedback, our team is ready to assist you.</p>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number (optional):</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="order-number">Order Number (if applicable):</label>
+            <input type="text" id="ordernumber" name="order-number">
+
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject" required>
+                <option value="general">General Inquiry</option>
+                <option value="product">Product Information</option>
+                <option value="order">Order Status</option>
+                <option value="returns">Returns & Exchanges</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <label>Preferred Contact Method:</label>
+            <div class="contact-method">
+                <input type="radio" id="contact-email" name="contact-method" value="email" checked>
+                <label for="contact-email">Email</label>
+
+                <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                <label for="contact-phone">Phone</label>
+            </div>
+
+            <div class="newsletter">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Yes, sign me up for the newsletter.</label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+        
+        </div>
+    </div>
+    <footer class="footer" style="position: relative; bottom: 400px;">
+      <div class="footer-container">
+          <div class="footer-section about">
+              <h2>About Us</h2>
+              <p>We offer the finest jewelry with timeless designs and unparalleled craftsmanship. Our collections are inspired by elegance and sophistication.</p>
+          </div>
+          <div class="footer-section links">
+              <h2>Quick Links</h2>
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Shop</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </div>
+          <div class="footer-section contact">
+              <h2>Contact Us</h2>
+              <ul>
+                  <li>Email: chrysallis@jewellery.com</li>
+                  <li>Phone: +918010079635</li>
+                  <li>Address:JM Road,Opp Sambhaji Park</li>
+              </ul>
+          </div>
+          
+              <form action="#">
+                  <input type="email" name="email" placeholder="Enter your email" style="width: 200px ;height: 30px;">
+                  
+              </form>
+              
+          </div>
+      </div>
+      <div class="footer-bottom">
+          &copy; 2024 Jewellery Store |Designed with  By RISHI
+      </div>
+  </footer>
+</body>
+</html>
